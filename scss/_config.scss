@@ -39,17 +39,21 @@ $background-opacity: 0.9;
 }
 
 // Media Query Mixins
+@mixin mediaXS {
+  @media screen and (max-width: 350px) {
+    @content;
+  }
+}
 @mixin mediaSm {
-  @media screen and (max-width: 500px) {
+  @media screen and (min-width: 351px) and (max-width: 500px) {
     @content;
   }
 }
 @mixin mediaSmLs {
-  @media screen and (max-width: 768px) and (orientation: landscape) {
+  @media screen and (max-width: 750px) and (orientation: landscape) {
     @content;
   }
 }
-
 @mixin mediaMd {
   @media screen and (max-width: 768px) {
     @content;
