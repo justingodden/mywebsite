@@ -144,7 +144,7 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh-60px); }
+  min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -194,8 +194,7 @@ main {
       transition: all 0.5s ease-out; }
 
 .boxes {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem; }
@@ -223,7 +222,7 @@ main {
 
 .btn-dark {
   background: black;
-  colour: #fff; }
+  color: #fff; }
 
 .btn-light {
   background: #c4c4c4;
@@ -279,5 +278,36 @@ main {
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
+  h1.lg-heading {
+    font-size: 4rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .boxes div {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  main#home h1 {
+    margin-top: 5vh; }
+  h1.lg-heading {
+    font-size: 3rem; }
+  .projects {
+    grid-template-columns: 1fr; }
+  ul.menu-nav,
+  .menu-nav {
+    height: 50vh; }
+  .menu-branding {
+    height: 50vh; }
+  .projects img {
+    width: 75%; }
+  .btn, .btn-dark, .btn-light {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    margin-left: 12.5%;
+    margin-right: 12.5%; }
+    .btn:hover, .btn-dark:hover, .btn-light:hover {
+      background: #0077ff;
+      color: #000; }
+  .boxes div {
+    font-size: 1rem; } }
