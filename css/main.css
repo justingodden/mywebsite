@@ -273,9 +273,11 @@ main {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .boxes div {
+    font-size: 1rem; } }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 351px) and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
   h1.lg-heading {
@@ -285,34 +287,45 @@ main {
   .boxes div {
     font-size: 1rem; } }
 
-@media screen and (max-width: 768px) and (orientation: landscape) {
+@media screen and (max-width: 350px) {
   main#home h1 {
-    margin-top: 5vh; }
-  main#home h1.lg-heading {
-    font-size: 2rem; }
+    margin-top: 10vh; }
   h1.lg-heading {
     font-size: 3rem; }
   main#home h2.sm-heading {
     font-size: 1rem;
     margin-bottom: 1rem; }
-  .projects {
+  .about-info .bio-image {
+    width: 150px;
+    height: 150px;
+    background: url("../img/portrait_small.jpg"); }
+  .about-info .projects {
     grid-template-columns: 1fr; }
-  ul.menu-nav,
+  .about-info .boxes div {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 750px) and (orientation: landscape) {
+  main#home h1 {
+    margin-top: 10vh; }
+  h1.lg-heading {
+    font-size: 3rem; }
+  main#home h2.sm-heading {
+    font-size: 1rem;
+    margin-bottom: 1rem; }
   .menu-nav {
-    height: 50vh; }
+    height: 50vh;
+    font-size: 24px; }
   .menu-branding {
     height: 50vh; }
-  .projects img {
-    width: 75%; }
-  .btn, .btn-dark, .btn-light {
-    display: block;
-    padding: 0.5rem 1rem;
-    border: 0;
-    margin-bottom: 0.3rem;
-    margin-left: 12.5%;
-    margin-right: 12.5%; }
-    .btn:hover, .btn-dark:hover, .btn-light:hover {
-      background: #0077ff;
-      color: #000; }
-  .boxes div {
+    .menu-branding .portrait {
+      background: url("../img/portrait_small.jpg");
+      width: 150px;
+      height: 150px; }
+  .about-info .bio-image {
+    width: 250px;
+    height: 250px;
+    background: url("../img/portrait.jpg"); }
+  .about-info .projects {
+    grid-template-columns: 1fr; }
+  .about-info .boxes div {
     font-size: 1rem; } }
