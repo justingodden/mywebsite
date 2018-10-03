@@ -88,8 +88,16 @@
   main#home h1 {
     margin-top: 5vh;
   }
+  main#home h1.lg-heading {
+    font-size: 2rem;
+  }
+
   h1.lg-heading {
     font-size: 3rem;
+  }
+  main#home h2.sm-heading {
+    font-size: 1rem;
+    margin-bottom: 1rem;
   }
   .projects {
     grid-template-columns: 1fr;
