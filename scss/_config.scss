@@ -44,6 +44,11 @@ $background-opacity: 0.9;
     @content;
   }
 }
+@mixin mediaSmLs {
+  @media screen and (max-width: 768px) and (orientation: landscape) {
+    @content;
+  }
+}
 
 @mixin mediaMd {
   @media screen and (max-width: 768px) {

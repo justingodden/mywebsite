@@ -70,7 +70,60 @@
   main#home h1 {
     margin-top: 10vh;
   }
+  h1.lg-heading {
+    font-size: 4rem;
+  }
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  .boxes {
+    div {
+      font-size: 1rem;
+    }
+  }
+}
+
+@include mediaSmLs {
+  main#home h1 {
+    margin-top: 5vh;
+  }
+  h1.lg-heading {
+    font-size: 3rem;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+  }
+  ul.menu-nav,
+  .menu-nav {
+    height: 50vh;
+  }
+
+  .menu-branding {
+    height: 50vh;
+  }
+
+  .projects {
+    img {
+      width: 75%;
+    }
+  }
+
+  .btn {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    &:hover {
+      background: $secondary-color;
+      color: set-text-colour($secondary-color);
+    }
+  }
+  .boxes {
+    div {
+      font-size: 1rem;
+    }
   }
 }

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Responsive portfolio website",
   "main": "index.js",
+  "homepage": "htts://justingodden.github.io/mywebsite",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
